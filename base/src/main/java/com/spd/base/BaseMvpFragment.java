@@ -8,7 +8,7 @@ import android.support.annotation.Nullable;
  *         联系方式:QQ:282921012
  *         功能描述:mvp fragment基类
  */
-public abstract class BaseMvpFragment<V, T extends BaseMvpPresenter<V>> extends BaseFragment {
+public abstract class BaseMvpFragment<T extends BasePresenter> extends BaseFragment {
     protected T mPresenter;
 
     @Override
@@ -16,7 +16,7 @@ public abstract class BaseMvpFragment<V, T extends BaseMvpPresenter<V>> extends 
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter = createPresenter();
-        mPresenter.attachView((V) this);
+        mPresenter.attachView(this);
     }
 
 
@@ -26,5 +26,9 @@ public abstract class BaseMvpFragment<V, T extends BaseMvpPresenter<V>> extends 
         super.onDestroy();
     }
 
+    /**
+     * 创建presenter
+     * @return presenter
+     */
     protected abstract T createPresenter();
 }

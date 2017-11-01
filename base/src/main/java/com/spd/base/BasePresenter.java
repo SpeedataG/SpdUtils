@@ -9,7 +9,11 @@ import java.lang.ref.WeakReference;
  *         联系方式:QQ:282921012
  *         功能描述:Presenter基类
  */
-public class BaseMvpPresenter<V> {
+public abstract class BasePresenter<V,M extends BaseModel> {
+    protected M mModel;
+    public BasePresenter(){
+        mModel = createModel();
+    }
     private Reference<V> mViewRef;
 
     void attachView(V view) {
@@ -34,4 +38,10 @@ public class BaseMvpPresenter<V> {
             mViewRef = null;
         }
     }
+
+    /**
+     * 创建model
+     * @return model
+     */
+    protected abstract M createModel();
 }

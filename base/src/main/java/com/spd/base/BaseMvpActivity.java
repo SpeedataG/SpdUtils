@@ -9,15 +9,15 @@ import android.support.annotation.Nullable;
  *         联系方式:QQ:282921012
  *         功能描述:mvp基类activity
  */
-public abstract class BaseMvpActivity<V, T extends BaseMvpPresenter<V>> extends BaseActivity {
-    protected T mPresenter;
+public abstract class BaseMvpActivity<P extends BasePresenter> extends BaseActivity {
+    protected P mPresenter;
 
     @SuppressWarnings("unchecked")
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mPresenter = createPresenter();
-        mPresenter.attachView((V) this);
+        mPresenter.attachView(this);
     }
 
     @Override
@@ -26,5 +26,10 @@ public abstract class BaseMvpActivity<V, T extends BaseMvpPresenter<V>> extends 
         super.onDestroy();
     }
 
-    protected abstract T createPresenter();
+    /**
+     * 创建presenter
+     *
+     * @return presenter
+     */
+    protected abstract P createPresenter();
 }

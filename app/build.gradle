@@ -2,7 +2,7 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 26
-    buildToolsVersion "26.0.1"
+    buildToolsVersion "27.0.0"
     defaultConfig {
         applicationId "com.spd.utils"
         minSdkVersion 21
@@ -11,10 +11,32 @@ android {
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
+    //打包命令 gradlew assembleRelease
+    signingConfigs {
+        release {
+            storeFile file("../keystore/Young.jks")
+            storePassword PASSWORD
+            keyAlias "那时年少"
+            keyPassword PASSWORD
+        }
+    }
+
     buildTypes {
         release {
+            buildConfigField "boolean", "LOG", "false"
+            shrinkResources true
+            zipAlignEnabled true
+            pseudoLocalesEnabled true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            buildConfigField "boolean", "LOG", "true"
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
     compileOptions {

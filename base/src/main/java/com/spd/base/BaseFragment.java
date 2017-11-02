@@ -35,8 +35,19 @@ public abstract class BaseFragment extends Fragment {
         initView(view, savedInstanceState);
     }
 
+    /**
+     * 获取布局id
+     *
+     * @return layoutId
+     */
     @LayoutRes
     protected abstract int getLayoutId();
 
+    /**
+     * 初始化
+     *
+     * @param view               view
+     * @param savedInstanceState {{@link #onCreate(Bundle)}}
+     */
     protected abstract void initView(View view, @Nullable Bundle savedInstanceState);
 }

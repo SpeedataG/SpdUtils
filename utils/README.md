@@ -218,3 +218,22 @@ reboot           : 重启
 reboot2Recovery  : 重启到recovery
 reboot2Bootloader: 重启到bootloader
 ```
+
+* ### 压缩相关→[ZipUtils.java]
+```
+zipFile           : 压缩文件
+unzipFile         : 解压文件
+unzipFileByKeyword: 解压带有关键字的文件
+getFilesPath      : 获取压缩文件中的文件路径链表
+getComments       : 获取压缩文件中的注释链表
+```
+
+* ### 服务相关→[ServiceUtils.java]
+```
+getAllRunningService: 获取所有运行的服务
+startService        : 启动服务
+stopService         : 停止服务
+bindService         : 绑定服务
+unbindService       : 解绑服务
+isServiceRunning    : 判断服务是否运行
+```

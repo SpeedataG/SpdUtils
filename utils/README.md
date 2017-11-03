@@ -160,3 +160,61 @@ decrypt3DES, decryptHexString3DES, decryptBase64_3DES : 3DES解密
 encryptAES, encryptAES2HexString, encryptAES2Base64   : AES加密
 decryptAES, decryptHexStringAES, decryptBase64AES     : AES解密
 ```
+
+* ### 缓存相关→[CacheUtils.java]
+```
+getInstance    : 获取缓存实例
+put            : 缓存中写入数据
+getBytes       : 缓存中读取字节数组
+getString      : 缓存中读取String
+getJSONObject  : 缓存中读取JSONObject
+getJSONArray   : 缓存中读取JSONArray
+getBitmap      : 缓存中读取Bitmap
+getDrawable    : 缓存中读取Drawable
+getParcelable  : 缓存中读取Parcelable
+getSerializable: 缓存中读取Serializable
+getCacheSize   : 获取缓存大小
+getCacheCount  : 获取缓存个数
+remove         : 根据键值移除缓存
+clear          : 清除所有缓存
+```
+
+* ### 转换相关→[ConvertUtils.java]
+```
+bytes2HexString, hexString2Bytes        : byteArr与hexString互转
+chars2Bytes, bytes2Chars                : charArr与byteArr互转
+memorySize2Byte, byte2MemorySize        : 以unit为单位的内存大小与字节数互转
+byte2FitMemorySize                      : 字节数转合适内存大小
+timeSpan2Millis, millis2TimeSpan        : 以unit为单位的时间长度与毫秒时间戳互转
+millis2FitTimeSpan                      : 毫秒时间戳转合适时间长度
+bytes2Bits, bits2Bytes                  : bytes与bits互转
+input2OutputStream, output2InputStream  : inputStream与outputStream互转
+inputStream2Bytes, bytes2InputStream    : inputStream与byteArr互转
+outputStream2Bytes, bytes2OutputStream  : outputStream与byteArr互转
+inputStream2String, string2InputStream  : inputStream与string按编码互转
+outputStream2String, string2OutputStream: outputStream与string按编码互转
+bitmap2Bytes, bytes2Bitmap              : bitmap与byteArr互转
+drawable2Bitmap, bitmap2Drawable        : drawable与bitmap互转
+drawable2Bytes, bytes2Drawable          : drawable与byteArr互转
+view2Bitmap                             : view转Bitmap
+dp2px, px2dp                            : dp与px互转
+sp2px, px2sp                            : sp与px互转
+```
+* ### Shell相关→[ShellUtils.java]
+```
+execCmd: 执行shell命令
+```
+
+* ### 设备相关→[DeviceUtils.java]
+```
+isDeviceRooted   : 判断设备是否rooted
+getSDKVersion    : 获取设备系统版本号
+getAndroidID     : 获取设备AndroidID
+getMacAddress    : 获取设备MAC地址
+getManufacturer  : 获取设备厂商
+getModel         : 获取设备型号
+shutdown         : 关机
+reboot           : 重启
+reboot2Recovery  : 重启到recovery
+reboot2Bootloader: 重启到bootloader
+```

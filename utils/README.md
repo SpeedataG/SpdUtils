@@ -237,3 +237,14 @@ bindService         : 绑定服务
 unbindService       : 解绑服务
 isServiceRunning    : 判断服务是否运行
 ```
+* ### 反射工具类→[AppReflectionUtils.java]
+```
+getProperty          : 得到某个对象的公共属性
+getStaticProperty    : 得到某类的静态公共属性
+invokeMethod         : 执行某对象方法
+invokeStaticMethod   : 执行某类的静态方法
+newInstance          : 新建实例
+isInstance           : 是不是某个类的实例
+getByArray           : 得到数组中的某个元素
+GetClassListByPackage: 得到类的集合
+```

@@ -56,6 +56,7 @@ dependencies {
     implementation "com.android.support.constraint:constraint-layout:$rootProject.ext.android.constraint_layout"
     implementation project(':base')
     implementation project(':utils')
+    implementation project(':datebase')
     implementation "com.android.support:design:$rootProject.ext.android.support"
     implementation "com.android.support:recyclerview-v7:$rootProject.ext.android.support"
     implementation 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.33'

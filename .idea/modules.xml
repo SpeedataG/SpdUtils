@@ -5,7 +5,8 @@
       <module fileurl="file://$PROJECT_DIR$/SpdUtils.iml" filepath="$PROJECT_DIR$/SpdUtils.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/base/base.iml" filepath="$PROJECT_DIR$/base/base.iml" />
-      <module fileurl="file://$PROJECT_DIR$/datebase/datebase.iml" filepath="$PROJECT_DIR$/datebase/datebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/database/datebase.iml" filepath="$PROJECT_DIR$/database/datebase.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rx/rx.iml" filepath="$PROJECT_DIR$/rx/rx.iml" />
       <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
     </modules>
   </component>

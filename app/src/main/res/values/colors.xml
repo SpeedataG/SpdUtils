@@ -2,4 +2,5 @@
 <resources>
     <color name="color_33475f">#33475f</color>
     <color name="color_normal">#888</color>
+    <color name="bg_press">#d8d8d8</color>
 </resources>

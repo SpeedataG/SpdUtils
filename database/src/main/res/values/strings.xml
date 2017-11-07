@@ -1,0 +1,5 @@
+<resources>
+    <string name="database">数据库操作</string>
+    <string name="single">单表操作</string>
+    <string name="many">多表操作</string>
+</resources>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.spd.database">
+
+    <application>
+        <activity
+            android:name="com.spd.database.view.MenuActivity"
+            android:label="@string/database"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="spd.intent.category.MODULE"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.spd.database.view.OneActivity"
+            android:label="@string/single"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name="com.spd.database.view.ManyActivity"
+            android:label="@string/many"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

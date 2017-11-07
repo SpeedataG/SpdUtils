@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.spd.rx">
+
+    <application>
+        <activity
+            android:name=".RxJava2Activity"
+            android:label="@string/rx"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="spd.intent.category.MODULE"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

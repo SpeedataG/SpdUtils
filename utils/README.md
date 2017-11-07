@@ -248,3 +248,12 @@ isInstance           : 是不是某个类的实例
 getByArray           : 得到数组中的某个元素
 GetClassListByPackage: 得到类的集合
 ```
+
+* ### Activity相关工具类→[ActivityUtils.java]
+```
+isActivityExists         :判断是否存在Activity
+getActivityLabel         :获取Activity的Label
+launchActivity           :打开Activity
+getLauncherActivity      :获取launcher activity
+getTopActivity           :获取栈顶Activity
+```

@@ -108,3 +108,8 @@ public static java.lang.String TABLENAME;
 # If you do not use RxJava:
 -dontwarn rx.**
 #------------------  GreenDao End   ----------------
+
+#------------------  retrofit2 Start         ----------------
+-dontwarn okio.**
+-dontwarn javax.annotation.**
+#------------------  retrofit2 End         ----------------
